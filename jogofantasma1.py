@@ -28,7 +28,7 @@ def text_objects(texto, fonte):
     textSurface = fonte.render(texto, True, preto)
     return textSurface, textSurface.get_rect()
 def message_display(text):
-    fonte = pygame.font.Font("freesansbold.ttf",50)
+    fonte = pygame.font.Font("freesansbold.ttf",30)
     TextSurf, TextRect = text_objects(text, fonte)
     TextRect.center = ((largura/2), (altura/2))
     display.blit(TextSurf, TextRect)
